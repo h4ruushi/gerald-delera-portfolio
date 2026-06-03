@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerald Delera | Portfolio - IT</title>
+  <meta name="description"
+    content="Portfolio of Gerald Delera - Detail-oriented IT . Specializing in IT Management, Database, and Technical Support.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- Background Blur Elements -->
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Gerald Delera<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <!-- Hero / Header Section -->
+    <header class="hero-section" id="about">
+      <div class="hero-container">
+        <div class="hero-info">
+          <span class="hero-subtitle">Welcome to my portfolio</span>
+          <h1 class="hero-title">Gerald Delera</h1>
+          <p class="hero-role">IT Management Trainee &amp; Support Specialist</p>
+          <p class="hero-summary">
+            Committed and detail-oriented IT professional with solid expertise in contributing to team success and
+            organizational goals. Proactive and solutions-focused individual, adept at stakeholder communication and
+            reporting. Seeking opportunities to apply knowledge and make a positive difference.
+          </p>
+
+          <div class="hero-contact-grid">
+            <a href="mailto:geralddelera0103@gmail.com" class="contact-pill">
+              <i data-lucide="mail"></i>
+              <span>geralddelera0103@gmail.com</span>
+            </a>
+            <a href="tel:09089287569" class="contact-pill">
+              <i data-lucide="phone"></i>
+              <span>09089287569</span>
+            </a>
+            <span class="contact-pill no-link">
+              <i data-lucide="map-pin"></i>
+              <span>Cainta, Rizal</span>
+            </span>
+            <a href="https://github.com/h4ruushi" target="_blank" rel="noopener noreferrer" class="contact-pill">
+              <i data-lucide="github"></i>
+              <span>h4ruushi</span>
+            </a>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+          </div>
+        </div>
+
+        <!-- Applicant Picture Placeholder on Upper Right -->
+        <div class="hero-image-wrapper">
+          <div class="image-border-glow">
+            <div class="image-inner-container">
+              <img src="assets/gerlad_1x1.jpg" alt="Gerald Delera Avatar Placeholder" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">Tools, technologies, and methodologies I specialize in</p>
+      </div>
+
+      <div class="skills-filter-container">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="networking">Networking &amp; Infrastructure</button>
+        <button class="filter-btn" data-filter="methodologies">Methodologies &amp; Tools</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-icon-wrapper coding">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3 class="skill-name">C++</h3>
+          <span class="skill-tag">Programming</span>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-icon-wrapper coding">
+            <i data-lucide="terminal"></i>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <span class="skill-tag">Programming</span>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-icon-wrapper coding">
+            <i data-lucide="database"></i>
+          </div>
+          <h3 class="skill-name">SQL</h3>
+          <span class="skill-tag">Database</span>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill-card" data-category="networking">
+          <div class="skill-icon-wrapper network">
+            <i data-lucide="network"></i>
+          </div>
+          <h3 class="skill-name">Basic Networking</h3>
+          <span class="skill-tag">Infrastructure</span>
+        </div>
+        <!-- Skill 5 -->
+        <div class="skill-card" data-category="networking">
+          <div class="skill-icon-wrapper network">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h3 class="skill-name">Hardware &amp; Software Maintenance</h3>
+          <span class="skill-tag">IT Support</span>
+        </div>
+        <!-- Skill 6 -->
+        <div class="skill-card" data-category="methodologies">
+          <div class="skill-icon-wrapper tools">
+            <i data-lucide="figma"></i>
+          </div>
+          <h3 class="skill-name">Figma</h3>
+          <span class="skill-tag">Design Tool</span>
+        </div>
+        <!-- Skill 7 -->
+        <div class="skill-card" data-category="methodologies">
+          <div class="skill-icon-wrapper tools">
+            <i data-lucide="video"></i>
+          </div>
+          <h3 class="skill-name">Basic Video Editing</h3>
+          <span class="skill-tag">Creative</span>
+        </div>
+        <!-- Skill 8 -->
+        <div class="skill-card" data-category="methodologies">
+          <div class="skill-icon-wrapper tools">
+            <i data-lucide="server"></i>
+          </div>
+          <h3 class="skill-name">Microsoft EdgeDC</h3>
+          <span class="skill-tag">Enterprise Tool</span>
+        </div>
+        <!-- Skill 9 -->
+        <div class="skill-card" data-category="methodologies">
+          <div class="skill-icon-wrapper tools">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3 class="skill-name">Agile Methodology</h3>
+          <span class="skill-tag">Process</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">My professional journey in IT development and support</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">L2 Technical Support</h3>
+                <h4 class="timeline-company">TAPservices Inc. <span class="timeline-loc">| Ortigas, Pasig City</span>
+                </h4>
+              </div>
+              <span class="timeline-date">Sep 2025 – Nov 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Assisted L2 Staff seniors in handling enterprise-level IT support tasks.</li>
+              <li>Processed transactional files in Microsoft EdgeDC to automate sales and increase dispatch speed.</li>
+              <li>Assisted in setup and maintenance of basic networking infrastructure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">IT Management Trainee</h3>
+                <h4 class="timeline-company">iOne Resources Inc. <span class="timeline-loc">| Ortigas, Pasig City</span>
+                </h4>
+              </div>
+              <span class="timeline-date">Feb 2025 – May 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Assisted in high-profile Starlink testing and remote installation setups.</li>
+              <li>Contributed to web development and front-end interface of the live vote tallying system for the 2025
+                national and local elections.</li>
+              <li>Communicated directly with election officers in different regions for critical elections preparation.
+              </li>
+              <li>Utilized Agile Approach (Scrum framework) to increase efficiency and responsiveness in team projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Academic and client-driven projects built with modern solutions</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-project="exmak">
+          <div class="project-card-header">
+            <span class="project-badge">Capstone</span>
+            <span class="project-year">2025 - 2026</span>
+          </div>
+          <h3 class="project-name">ExMak – Web-based Examination Result Management System</h3>
+          <p class="project-teaser">
+            Capstone project focused on centralizing the computation of examination results. Now in active use by the
+            SDO Makati.
+          </p>
+          <div class="project-tags">
+            <span>Web System</span>
+            <span>Database</span>
+            <span>Agile</span>
+          </div>
+          <button class="project-link-btn">View Details <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-project="hotel">
+          <div class="project-card-header">
+            <span class="project-badge">Academic Project</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">Hotel Reservation System</h3>
+          <p class="project-teaser">
+            Improved hotel booking system featuring an enhanced user interface and full offline database integration.
+          </p>
+          <div class="project-tags">
+            <span>C++</span>
+            <span>UI Design</span>
+            <span>File Database</span>
+          </div>
+          <button class="project-link-btn">View Details <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-project="airlines">
+          <div class="project-card-header">
+            <span class="project-badge">Course Work</span>
+            <span class="project-year">2022</span>
+          </div>
+          <h3 class="project-name">Airlines Reservation System</h3>
+          <p class="project-teaser">
+            Fully functional airline transactional program imitating an intuitive CLI dashboard interface.
+          </p>
+          <div class="project-tags">
+            <span>C++</span>
+            <span>CMD UI</span>
+            <span>Transactional System</span>
+          </div>
+          <button class="project-link-btn">View Details <i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-desc">Academic background and fields of study</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- Edu Card 1 -->
+        <div class="edu-card">
+          <div class="edu-icon-wrapper">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <div class="edu-details">
+            <span class="edu-duration">2022 – Present</span>
+            <h3 class="edu-degree">Bachelor of Science in Information Technology</h3>
+            <h4 class="edu-school">Rizal Technological University</h4>
+            <p class="edu-location"><i data-lucide="map-pin"></i> Boni, Mandaluyong City</p>
+          </div>
+        </div>
+
+        <!-- Edu Card 2 -->
+        <div class="edu-card">
+          <div class="edu-icon-wrapper">
+            <i data-lucide="book-open"></i>
+          </div>
+          <div class="edu-details">
+            <span class="edu-duration">2020 – 2022</span>
+            <h3 class="edu-degree">STEM (Science, Technology, Engineering, and Mathematics)</h3>
+            <h4 class="edu-school">Sta. Lucia High School</h4>
+            <p class="edu-location"><i data-lucide="map-pin"></i> Sta. Lucia, Pasig City</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Let's discuss how we can work together or answer any inquiries</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Direct Contacts -->
+        <div class="contact-info-cards">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="info-card-details">
+              <h4>Email Me</h4>
+              <a href="mailto:geralddelera0103@gmail.com">geralddelera0103@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="info-card-details">
+              <h4>Call Me</h4>
+              <a href="tel:09089287569">09089287569</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="info-card-details">
+              <h4>Location</h4>
+              <p>Cainta, Rizal, Philippines</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Collaboration / Inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span>
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </div>
+      </form>
+  </main>
+
+  <!-- Project Details Modals -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Content will be injected dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <i data-lucide="check-circle" class="toast-success-icon"></i>
+      <div class="toast-message">
+        <span class="toast-title">Message Sent!</span>
+        <span class="toast-desc">Thank you. I will get back to you shortly.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">&copy; 2026 Gerald Delera. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/h4ruushi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="mailto:geralddelera0103@gmail.com" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
